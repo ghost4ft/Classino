@@ -9,7 +9,6 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "colord": "^2.9.3",
     "next": "15.3.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"

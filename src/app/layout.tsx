@@ -1,7 +1,11 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Inter, Roboto } from "next/font/google";
+import { Roboto } from "next/font/google";
 import localFont from "next/font/local";
+import {Footer} from "./_components/footer/";
+import { Header } from "./_components/header/";
+
+
 
 const yekan = localFont({
   src: [
@@ -44,16 +48,10 @@ export default function RootLayout({
 }>) {
   return (
     <html dir="rtl" className={`dark ${yekan.variable} ${roboto.variable}`}>
-      <body className="flex flex-col min-h-screen font-bold uppercase bg-white text-base-100 dark:bg-base-100 dark:text-base-content">
-        <header className="flex items-center justify-center text-3xl h-20">
-          دوره معماری ری اکت
-        </header>
-        <div className="flex-1 flex  justify-center items-center">
-          {children}
-        </div>
-        <footer className="flex items-center justify-center text-3xl h-20">
-          FOOTER
-        </footer>
+      <body className="min-h-screen grid grid-rows-[80px_1fr_auto] dark:bg-base-100 dark:text-base-content">
+        <Header />
+        <main>{children}</main>
+        <Footer />
       </body>
     </html>
   );

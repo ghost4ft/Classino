@@ -5,15 +5,15 @@
 @theme {
   --color-current: currentColor;
   --color-transparent: transparent;
-  --color-white: #F9F9F9;
-  --color-primary: #007BEC;
-  --color-primary-content: #FFFFFF;
+  --color-white: #f9f9f9;
+  --color-primary: #007bec;
+  --color-primary-content: #ffffff;
   --color-primary-focus: #0068c8;
   --color-secondary: #6c5ce7;
-  --color-secondary-content: #FFFFFF;
+  --color-secondary-content: #ffffff;
   --color-secondary-focus: #503de2;
-  --color-accent: #1FB2A5;
-  --color-accent-content: #FFFFFF;
+  --color-accent: #1fb2a5;
+  --color-accent-content: #ffffff;
   --color-accent-focus: #1a9489;
   --color-neutral: #2a323c;
   --color-neutral-content: #303030;
@@ -24,7 +24,7 @@
   --color-base-100: #1d232a;
   --color-base-200: #191e24;
   --color-base-300: #15191e;
-  --color-base-content: #A6ADBB;
+  --color-base-content: #a6adbb;
   --color-info: #3abff8;
   --color-info-content: #18272f;
   --color-success: #36d399;
@@ -35,17 +35,36 @@
   --color-error-content: #311c1b;
   --color-gradient-first: #34eaa0;
   --color-gradient-second: #0fa2e9;
- 
-}  
+}
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+@media (max-width: 1280px) {
+  .container {
+    max-width: 1024px;
+  }
+}
 
+@media (max-width: 1024px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 100%;
+  }
+}
 html {
-    font-family: var(--font-yekan);
+  font-family: var(--font-yekan);
 }
 
 :lang(en) {
-    font-family: var(--font-inter);
+  font-family: var(--font-inter);
 }
-
-
-
-
